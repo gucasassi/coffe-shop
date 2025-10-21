@@ -11,7 +11,9 @@
     "clean": "rimraf dist node_modules .astro"
   },
   "dependencies": {
-    "astro": "5.14.7"
+    "@tailwindcss/vite": "4.1.15",
+    "astro": "5.14.7",
+    "tailwindcss": "4.1.15"
   },
   "devDependencies": {
     "@commitlint/cli": "20.1.0",
