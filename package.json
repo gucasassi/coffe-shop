@@ -5,14 +5,27 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "prepare": "husky",
     "preview": "astro preview",
     "astro": "astro",
     "clean": "rimraf dist node_modules .astro"
   },
   "dependencies": {
-    "astro": "^5.14.7"
+    "astro": "5.14.7"
   },
   "devDependencies": {
+    "husky": "9.1.7",
+    "lint-staged": "16.2.5",
     "rimraf": "6.0.1"
+  },
+  "packageManager": "pnpm@10.18.3",
+  "engines": {
+    "node": "24.9.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --max-warnings 0"
+    ]
   }
 }
